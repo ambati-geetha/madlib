@@ -42,8 +42,51 @@ server.post('/ITC505/lab-7', (req, res) => {
 
     // Send the generated story back to the user
     res.send(`
-        <h1>Mad Lib Story</h1>
-        <p>${madLib}</p>
-        <a href="/ITC505/lab-7/index.html">Create Another Mad Lib story</a>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Lib Game</title>
+    <link rel="stylesheet" href="madlib.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1, p, a {
+            text-align: center;
+            color: #333;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mad Lib Story</h1>
+    <p>${madLib}</p>
+    <a href="/ITC505/lab-7/index.html">Create Another Mad Lib story</a>
+</body>
+</html>
+
     `);
 });
