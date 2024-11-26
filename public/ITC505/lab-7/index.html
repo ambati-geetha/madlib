@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="madlib.css">
 </head>
 <body>
-    <h1>Mad Lib Story</h1>
+    <h1>Mad Lib Generator</h1>
     <form method="POST" action="/ITC505/lab-7">
         <label for="noun">Noun:</label>
         <input type="text" id="noun" name="noun" required><br>
@@ -24,12 +24,15 @@
         <label for="pluralNoun">Plural Noun:</label>
         <input type="text" id="pluralNoun" name="pluralNoun" required><br>
 
-        <button type="submit">Submit</button>
+        <button type="Generate story">Submit</button>
     </form>
     <footer>
         <p>Last updated: 
             <span id="lastModified"></span>
         </p>
+        <p><strong>Addendum:</strong></p>
+        <p>This Mad Lib game allows users to create unique and fun stories by providing various types of words. The form collects inputs like nouns, verbs, adjectives, and more. The backend, powered by Express.js, handles the form submission and dynamically generates the story based on the input.</p>
+        <p>Challenges encountered included form data validation and ensuring proper routing. The "Last Updated" feature was implemented using JavaScript to display the last modification time of the page.</p>
     </footer>
     <script type="text/javascript">
          var x = document.lastModified;
