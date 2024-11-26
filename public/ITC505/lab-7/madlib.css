@@ -1,0 +1,95 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun and unique font */
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #f4f4f9, #d8e3e7, #a4c0d1); /* Multicolor gradient */
+    color: #2c3e50; /* Text color */
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007BFF; /* Unique underline effect */
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+form {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    background: radial-gradient(circle, #ffffff, #e6e6e6); /* Subtle gradient */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    border-radius: 12px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    color: #34495e;
+    font-size: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 8px 2px rgba(0, 123, 255, 0.5); /* Focus highlight */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #28a745; /* Unique green color */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.3); /* Subtle button shadow */
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.07); /* More noticeable hover scaling */
+}
+
+button:active {
+    background-color: #1e7e34; /* Slightly darker when clicked */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Compressed shadow effect */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
